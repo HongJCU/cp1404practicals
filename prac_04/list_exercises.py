@@ -3,7 +3,7 @@ numbers = []
 
 
 for i in range(5):
-    num = float(input("Number: "))  
+    num = float(input("Number: "))
     numbers.append(num)
 
 

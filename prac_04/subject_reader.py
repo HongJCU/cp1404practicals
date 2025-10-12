@@ -7,7 +7,7 @@ FILENAME = "subject_data.txt"
 
 
 def main():
-  
+
     subject_records = load_data(FILENAME)
     display_subject_details(subject_records)
 
