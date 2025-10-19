@@ -27,6 +27,6 @@ def main():
         email = input("Email: ")
 
     for email,name in email_to_name.items():
-        print(f"{name}: {email}")
+        print(f"{name} {email}")
 
 main()
