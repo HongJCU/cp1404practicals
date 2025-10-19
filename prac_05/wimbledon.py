@@ -36,7 +36,9 @@ def main():
     for champion, wins in sorted(champion_to_count.items()):
         print(f"{champion:20} {wins}", sep="")
 
-    print(f"There {len(countries)} countries have won Wimbledon: ", ", ".join(countries))
+    print(f"There {len(countries)} countries have won Wimbledon: ")
+   #Change the display down one row and seperated
+    print(", ".join(countries))
 
 
 main()
