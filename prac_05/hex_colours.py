@@ -11,3 +11,12 @@ COLOR_TO_CODE = {"Absolute Zero": "#0048ba","Acid Green": "#b0bf1a","Alice Blue"
 # Print all color names and their codes neatly lined up
 for color, code in COLOR_TO_CODE.items():
     print(f"{color:20} is {code}")
+
+# Get user input and make it case-insensitive
+color_name = input("Enter the color name: ").title()
+while color_name != "":
+    try:
+        print(f"{color_name} is {COLOR_TO_CODE[color_name]}")
+    except KeyError:
+        print("Invalid color name")
+    color_name = input("Enter the color name: ").title()
