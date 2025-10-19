@@ -40,5 +40,4 @@ def main():
    #Change the display down one row and seperated
     print(", ".join(countries))
 
-
 main()
