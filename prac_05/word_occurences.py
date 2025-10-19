@@ -4,4 +4,5 @@ Estimate: 30 minutes
 Actual:   32 minutes
 """
 text = input("Text: ")
-print(text)
+words = text.split()
+print(words)
