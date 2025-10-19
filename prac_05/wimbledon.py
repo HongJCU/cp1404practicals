@@ -21,5 +21,7 @@ def count_champions(data):
         champion_to_count[champion] = champion_to_count.get(champion, 0) + 1
     return champion_to_count
 
-
-#
+# Created a function remove duplicate and sort them alphabetically for display
+def get_countries(data):
+    countries = {row[1] for row in data}
+    return sorted(countries)
