@@ -21,4 +21,5 @@ def count_champions(data):
         champion_to_count[champion] = champion_to_count.get(champion, 0) + 1
     return champion_to_count
 
+
 #
