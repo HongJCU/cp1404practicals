@@ -1,7 +1,7 @@
 """
 emails
 Estimate: 20 minutes
-Actual:   32 minutes
+Actual:   38 minutes
 """
 
 #Added a function to split the email between . and @ to get the first and last name
