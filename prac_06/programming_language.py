@@ -1,5 +1,10 @@
 """CP1404/CP5632 Practical - Programming Language class."""
-
+"""CP1404/CP5632 Practical - Langugage class example."""
+"""
+car
+Estimate: 30 minutes
+Actual:   45 minutes
+"""
 class ProgrammingLanguage:
 
 #Definition of init with information fields
