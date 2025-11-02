@@ -1,4 +1,8 @@
 """CP1404 Practical - Guitar class test"""
+"""
+Estimate: 30 minutes
+Actual:   45 minutes
+"""
 
 from guitar import Guitar
 
