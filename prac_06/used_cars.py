@@ -3,7 +3,6 @@ CP1404/CP5632 Practical - Client code to use the Car class.
 Note that the import has a folder (module) in it.
 This is why we name our folders with no spaces or capitals, as valid module names.
 """
-from kivy.multistroke import distance
 
 from prac_06.car import Car
 
@@ -23,7 +22,7 @@ def main():
     print(f"{limo.name} has fuel: {limo.fuel}")
 
     distance_driven = limo.drive(115)
-    print(f"{limo.name} drove {distance_driven.fuel} km.")
+    print(f"{limo.name} drove {distance_driven} km.")
 
     #Print the limo object to test _str_ method
     print(limo)
