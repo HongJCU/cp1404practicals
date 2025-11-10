@@ -24,4 +24,11 @@ def __str__(self):
             f"priority {self.priority}, estimate: ${self.cost_estimate:,.2f}, "
             f"completion: {self.completion_percentage}%")
 
+def __lt__(self, other):
+    """Compare projects by priority for sorting."""
+    return self.priority < other.priority
 
+
+def is_complete(self):
+    """Return True if the project is complete."""
+    return self.completion_percentage == 100
