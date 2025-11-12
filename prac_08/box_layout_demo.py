@@ -1,3 +1,14 @@
+"""
+CP1404/CP5632 Practical
+Kivy GUI program to square a number
+Hong K. SOng , IT@JCU
+Started 12/11/2025
+Estimated 20 mins
+Done: 25 mins
+"""
+
+
+
 from kivy.app import App
 from kivy.lang import Builder
 
