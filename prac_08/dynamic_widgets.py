@@ -1,7 +1,7 @@
 """
 Name: Hong K. Song
 Time Est: 45mins
-Time Done: 40 mins 
+Time Done: 40 mins
 
 """
 
@@ -16,7 +16,7 @@ class NamesApp(App):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        # This is the *model* (your data)
+
         self.names = ["Henry", "Bob", "Charlie", "Diana", "Eve"]
 
     def build(self):
