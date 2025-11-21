@@ -1,4 +1,3 @@
-# taxi.py
 """
 CP1404/CP5632 Practical
 Taxi class extending Car
