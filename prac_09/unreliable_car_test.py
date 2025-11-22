@@ -33,10 +33,6 @@ def main():
 
     print(f"  Attempts: {attempts}, Successful drives: {successes}")
     print(f"  Expected: {attempts}\n")
-
-    # ----------------------------------------------------------
-    # Statistical test: reliability ≈ observed success rate
-    # ----------------------------------------------------------
     print("Testing 30% reliability statistically:")
 
     reliability = 30
