@@ -14,4 +14,6 @@ class SilverServiceTaxi(Taxi):
         """Calculate fare including flagfall."""
         return super().get_fare() + self.flagfall
 
-
+    def __str__(self):
+        """Return string representation including flagfall."""
+        return f"{super().__str__()} plus flagfall of ${self.flagfall:.2f}"
