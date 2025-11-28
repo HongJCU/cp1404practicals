@@ -1,7 +1,7 @@
 """CP1404/CP5632 Practical - silver_service_taxi class"""
 from prac_09.taxi import Taxi
 
-class silver_service_taxi(Taxi):
+class SilverServiceTaxi(Taxi):
     flagfall = 4.50
 
     def __init__(self, name, fuel, fanciness):

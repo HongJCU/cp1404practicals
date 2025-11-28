@@ -1,5 +1,5 @@
 """CP1404/CP5632 Practical - SilverServiceTaxi tests"""
-from prac_09.SilverServiceTaxi import SilverServiceTaxi
+from prac_09.silver_service_taxi import SilverServiceTaxi
 
 
 def main():

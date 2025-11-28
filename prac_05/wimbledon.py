@@ -3,14 +3,15 @@ Wimbledon.py
 Estimate: 60 minutes
 Actual:   50 minutes
 """
-
+import csv
+from fileinput import filename
+import csv
 # Add a funciton to read csv file
-def read_csv_file(filename):
-    with open(filename,"r",encoding="utf-8-sig") as in_file:
-        #after done reading, the cursor will jump down one line
-        in_file.readline()
-        data=[line.strip().split(",") for line in in_file]
-    return data
+
+with open('wimbledon.csv', 'r', encoding='utf-8-sig') as in_file:
+    reader = csv.reader(in_file)
+    for row in reader:
+        print(row)
 
 # Add a counter to count the champion
 def count_champions(data):
@@ -29,7 +30,7 @@ def get_countries(data):
 # Created a function to display the result as formatted
 def main():
     filename = "wimbledon.csv"
-    data=read_csv_file(filename)
+    data= read_csv_file(filename)
     champion_to_count = count_champions(data)
     countries = get_countries(data)
     print("Wimbledon Champions:")

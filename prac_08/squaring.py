@@ -10,8 +10,7 @@ from kivy.app import App
 from kivy.lang import Builder
 from kivy.core.window import Window
 
-__author__ = 'Lindsay Ward'
-
+__author__ = 'Hong K. Song'
 
 class SquareNumberApp(App):
     """ SquareNumberApp is a Kivy App for squaring a number """
