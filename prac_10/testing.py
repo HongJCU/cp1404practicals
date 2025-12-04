@@ -9,7 +9,7 @@ from prac_06.car import Car
 
 def repeat_string(s, n):
     """Repeat string s, n times, with spaces in between."""
-    return s * n
+    return " ".join([s] * n)
 
 
 def is_long_word(word, length=5):
@@ -22,7 +22,33 @@ def is_long_word(word, length=5):
     >>> is_long_word("Python", 6)
     True
     """
-    return len(word) > length
+    return len(word) >= length
+
+def format_sentence(phrase):
+    """
+    Format a phrase as a sentence, starting with a capital
+    and ending with a single full stop.
+
+    >>> format_sentence("hello")
+    'Hello.'
+    >>> format_sentence("It is an ex parrot.")
+    'It is an ex parrot.'
+    >>> format_sentence("  goodbye")
+    'Goodbye.'
+    """
+    phrase = phrase.strip()
+    if not phrase:
+        return "."
+
+    # Capitalise first character, leave the rest as-is
+    phrase = phrase[0].upper() + phrase[1:]
+
+    # Ensure it ends with a single full stop
+    if not phrase.endswith("."):
+        phrase += "."
+
+    return phrase
+
 
 
 def run_tests():
@@ -45,14 +71,18 @@ def run_tests():
     # Note that Car's __init__ function sets the fuel in one of two ways:
     # using the value passed in or the default
     # You should test both of these
-    car = Car(fuel=100)
+    car = Car()
+    assert car.fuel == 0, "Car does not set default fuel correctly"
 
+    # custom fuel
+    car = Car(fuel=10)
+    assert car.fuel == 10, "Car does not set custom fuel correctly"
 
 run_tests()
 
 # TODO: 3. Uncomment the following line and run the doctests
 # (PyCharm may see your >>> doctest comments and run doctests anyway.)
-# doctest.testmod()
+doctest.testmod()
 
 # TODO: 4. Fix the failing is_long_word function
 # (Don't change the tests, change the function!)
